@@ -1,44 +1,46 @@
 <template>
   <!-- Header -->
-  <header class="flex pt-[17px] pb-[18px] min-h-[80px] bg-[#272727]">
+  <header class="relative flex pt-[17px] pb-[18px] min-h-[80px] bg-[#272727]">
     <div class="flex items-center justify-between gap-x-[50px] px-[30px] mx-auto max-w-[1800px] w-full">
       <a class="flex shrink-0" href="/">
-        <img class="" src="/src/assets/images/logo.svg" alt="Logo Kate Kulish">
+        <img class="laptop:w-[283px] tablet:w-[260px] mobile:w-[207px]" src="/src/assets/images/logo.svg" loading="lazy" alt="Logo Kate Kulish">
       </a>
-      <ul class="flex items-center justify-between flex-wrap gap-[10px] w-full font-semibold text-[18px] leading-[.8] text-white">
+      <ul class="2xl-max:hidden 2xl-max:fixed 2xl:relative 2xl:h-auto 2xl-max:h-screen 2xl-max:pt-[100px] 2xl-max:pl-[19px] 2xl-max:z-10 2xl-max:inset-0 flex 2xl-max:flex-col 2xl:flex-row 2xl:items-center justify-between 2xl-max:justify-start flex-wrap 2xl-max:gap-y-[32px] 2xl:gap-x-[10px] 2xl:w-full w-[374px] 2xl-max:bg-white 2xl:bg-[#272727] 2xl:font-semibold 2xl-max:text-[16px] 2xl:text-[18px] 2xl-max:leading-[1.12] 2xl:leading-[.8] 2xl:text-white 2xl-max:text-[#3d3d3d]">
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Main</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Main</a>
         </li>
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Gallery</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Gallery</a>
         </li>
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Exhibitions</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Exhibitions</a>
         </li>
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Bio</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Bio</a>
         </li>
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">FAQ</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">FAQ</a>
         </li>
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Contacts</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">Contacts</a>
         </li>
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300"  href="#">Auction</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300"  href="#">Auction</a>
         </li>
         <li>
-          <a class="relative after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">NFT</a>
+          <a class="relative after:content-none 2xl:after:content-[''] after:opacity-0 hover:after:opacity-100 after:absolute after:bottom-[-12px] after:rounded after:left-[50%] after:mb-0.5 after:bg-white flex after:w-[5px] after:h-[5px] after:transition after:duration-300" href="#">NFT</a>
         </li>
       </ul>
       <div class="flex">
-        <div class="relative after:content-[''] after:top-[3.5px] after:h-[39px] after:w-[2px] after:absolute after:bg-white/[.05] after:right-[-18px] mr-[18px]">
-          <a class="flex items-center justify-center w-[46px] h-[46px] rounded-full bg-white transition duration-300 hover:bg-[#4137d0]" href="#">
-            <svg class="w-[23px] h-[21px] fill-[#242424] hover:fill-white" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.3516 0.4375C15.4419 0.438558 14.5422 0.625965 13.7077 0.988163C12.8733 1.35036 12.122 1.87967 11.5 2.54344C10.5885 1.57065 9.40566 0.894329 8.10496 0.602281C6.80426 0.310232 5.44581 0.415942 4.20595 0.905688C2.96608 1.39543 1.90208 2.24659 1.15206 3.34868C0.402047 4.45076 0.000656326 5.75286 0 7.08594C0 13.7056 10.677 20.2031 11.1406 20.4583C11.2524 20.5254 11.3804 20.5609 11.5108 20.5609C11.6412 20.5609 11.7691 20.5254 11.8809 20.4583C12.323 20.2031 23 13.7056 23 7.08594C22.9981 5.32325 22.297 3.6333 21.0506 2.38688C19.8042 1.14047 18.1143 0.439403 16.3516 0.4375ZM11.5 18.9956C9.64203 17.8097 1.4375 12.2681 1.4375 7.08594C1.43842 5.97904 1.79179 4.9012 2.44639 4.00861C3.10099 3.11602 4.02282 2.45506 5.07827 2.12153C6.13372 1.788 7.26795 1.79922 8.3166 2.15357C9.36524 2.50792 10.2738 3.18698 10.9106 4.09234C10.977 4.18652 11.065 4.26336 11.1672 4.31641C11.2695 4.36946 11.383 4.39715 11.4982 4.39715C11.6134 4.39715 11.7269 4.36946 11.8292 4.31641C11.9314 4.26336 12.0194 4.18652 12.0858 4.09234C12.7221 3.18542 13.6308 2.50489 14.6802 2.14955C15.7295 1.7942 16.8648 1.78254 17.9212 2.11625C18.9776 2.44996 19.9002 3.11167 20.555 4.00533C21.2097 4.89898 21.5627 5.97807 21.5625 7.08594C21.5625 12.2645 13.358 17.8061 11.5 18.9956Z"/>
-            </svg>
-          </a>
-        </div>
+        <ul class="relative flex gap-x-[10px] after:content-[''] after:top-[3.5px] after:h-[39px] after:w-[2px] after:absolute after:bg-white/[.05] after:right-[-18px] mr-[18px]">
+          <li>
+            <a class="flex items-center justify-center w-[46px] h-[46px] rounded-full bg-white transition duration-300 hover:bg-[#4137d0] group" href="#">
+              <svg class="w-[23px] h-[21px] fill-[#242424] group-hover:fill-white transition duration-300" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.3516 0.4375C15.4419 0.438558 14.5422 0.625965 13.7077 0.988163C12.8733 1.35036 12.122 1.87967 11.5 2.54344C10.5885 1.57065 9.40566 0.894329 8.10496 0.602281C6.80426 0.310232 5.44581 0.415942 4.20595 0.905688C2.96608 1.39543 1.90208 2.24659 1.15206 3.34868C0.402047 4.45076 0.000656326 5.75286 0 7.08594C0 13.7056 10.677 20.2031 11.1406 20.4583C11.2524 20.5254 11.3804 20.5609 11.5108 20.5609C11.6412 20.5609 11.7691 20.5254 11.8809 20.4583C12.323 20.2031 23 13.7056 23 7.08594C22.9981 5.32325 22.297 3.6333 21.0506 2.38688C19.8042 1.14047 18.1143 0.439403 16.3516 0.4375ZM11.5 18.9956C9.64203 17.8097 1.4375 12.2681 1.4375 7.08594C1.43842 5.97904 1.79179 4.9012 2.44639 4.00861C3.10099 3.11602 4.02282 2.45506 5.07827 2.12153C6.13372 1.788 7.26795 1.79922 8.3166 2.15357C9.36524 2.50792 10.2738 3.18698 10.9106 4.09234C10.977 4.18652 11.065 4.26336 11.1672 4.31641C11.2695 4.36946 11.383 4.39715 11.4982 4.39715C11.6134 4.39715 11.7269 4.36946 11.8292 4.31641C11.9314 4.26336 12.0194 4.18652 12.0858 4.09234C12.7221 3.18542 13.6308 2.50489 14.6802 2.14955C15.7295 1.7942 16.8648 1.78254 17.9212 2.11625C18.9776 2.44996 19.9002 3.11167 20.555 4.00533C21.2097 4.89898 21.5627 5.97807 21.5625 7.08594C21.5625 12.2645 13.358 17.8061 11.5 18.9956Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <ul class="flex items-center gap-x-[10px] ml-[18px]">
           <li>
             <a class="flex items-center justify-center w-[46px] h-[46px] rounded-full bg-white/[.05] transition duration-300 hover:bg-[#3b5998] backdrop-blur-[2px]" href="#">
@@ -77,10 +79,10 @@
   <!-- / Header -->
   <main>
     <!-- Hero -->
-    <section class="relative h-[1319px] bg-center bg-cover bg-no-repeat bg-bg-hero">
+    <section class="relative h-[1319px] bg-center bg-cover bg-no-repeat laptop:bg-bg-hero tablet:bg-bg-hero-tablet mobile:bg-bg-hero-mobile">
       <div class="px-[30px] mx-auto max-w-[1800px]">
         <div class="pt-[130px] pl-[28px]">
-          <h1 class="mb-6 drop-shadow-3xl w-1/2 font-serif text-12xl uppercase text-white">Kate Kulish</h1>
+          <h1 class="mb-6 drop-shadow-3xl w-1/2 font-serif 2xl:text-12xl uppercase text-white md:text-[90px] sm:text-[60px]">Kate Kulish</h1>
           <ul role="list" class="relative z-10 flex gap-10 items-center pl-5 ml-3 text-[26px] text-white marker:text-white marker:text-xl list-disc">
             <li>Pureness</li>
             <li>Energy</li>

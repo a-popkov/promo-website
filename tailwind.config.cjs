@@ -6,9 +6,13 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'desktop': '1200px',
-      'tablet': '768px',
-      'mobile': '576px',
+      'mobile': {'min': '320px', 'max': '767px'},
+      'tablet': {'min': '768px', 'max': '1023px'},
+      'laptop': {'min': '1024px'},
+      'sm': '320px',
+      'md': '640px',
+      '2xl': '1350px',
+      '2xl-max': {'max': '1349px'},
       'portrait': {
         'raw': '(orientation: portrait)'
       },
@@ -42,9 +46,9 @@ module.exports = {
         ]
       },
       backgroundImage: theme => ({
-        'bg-hero': "url(/src/assets/images/hero-bg.png)",
-        'bg-hero-tablet': "url(/src/assets/images/hero-bg-tablet.png)",
-        'bg-hero-mobile': "url(/src/assets/images/hero-bg-mobile.png)",
+        'bg-hero': "url('/src/assets/images/hero-bg.png')",
+        'bg-hero-tablet': "url('/src/assets/images/bg-hero-tablet.png')",
+        'bg-hero-mobile': "url('/src/assets/images/bg-hero-mobile.png')",
       }),
     },
   },
