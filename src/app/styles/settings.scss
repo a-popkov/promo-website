@@ -1,0 +1,103 @@
+/* Global */
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+
+.page,
+.page__body {
+  height: 100%;
+}
+
+.page {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+  font-family: var(--font-primary, var(--font-secondary));
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-width: 320px;
+  font-weight: var(--font-regular);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-grey-light);
+  background-color: var(--color-white);
+}
+
+.page__main {
+  flex: 1;
+}
+
+.container {
+  margin-inline: auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reset-btn {
+  display: inline-block;
+  margin: 0;
+  outline: none;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  transition: var(--duration-normal);
+  cursor: pointer;
+  user-select: none;
+}
+
+.reset-link {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  text-decoration: none;
+  color: currentColor;
+  background-color: transparent;
+  transition: var(--duration-normal);
+  cursor: pointer;
+}
+
+.reset-img {
+  display: block;
+  vertical-align: middle;
+  border-style: none;
+  height: auto;
+  max-inline-size: 100%;
+  object-fit: cover;
+  user-select: none;
+
+  // If a `width` and/or `height` attribute have been explicitly defined, let’s not make the image fluid.
+  &[width],
+  &[height] {
+    max-inline-size: none;
+  }
+
+  &[draggable="false"] {
+    pointer-events: none;
+    -webkit-user-drag: none;
+  }
+}

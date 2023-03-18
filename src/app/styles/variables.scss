@@ -1,0 +1,58 @@
+:root {
+
+  /* spacing */
+
+  --content-width: 1860px;
+  /* --container-offset: 50px; */
+  --container-offset: clamp(15px, 7vw, 60px);
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --section-offset: 100px;
+  --cols: 12;
+  --gap: 85px;
+
+  /* typography */
+
+  --font-primary: "Poppins";
+  --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* color palettes */
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* gray */
+  // --color-grey-lightest: #e9eaeb;
+  // --color-grey-lighter: #cacaca;
+  --color-grey-light: #7c6e6e;
+  // --color-grey-medium: #414141;
+  // --color-grey-dark: #333333;
+  --color-grey-darker: #272727;
+
+  /* orange */
+
+  --color-orange-light: #f7b045;
+  --color-orange-medium: #ff9900;
+  --color-orange-dark: #e1670e;
+
+  /* stylization */
+
+  --header-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  --search-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  --focus: 2px solid var(--color-orange-medium);
+
+  /* speed */
+
+  --hero-slider-speed: 500;
+
+  /* easing transitions */
+
+  --duration-normal: 0.3s var(--easing-out);
+  --easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); /* http://cubic-bezier.com/#.25,.74,.22,1.1 */
+  --easing-back-in: cubic-bezier(0.47, -0.1, 0.5, -0.06); /* http://cubic-bezier.com/#.47,-0.1,.5,-.06 */
+  --easing-out: ease-out;
+  --easing-in: ease-in;
+}
