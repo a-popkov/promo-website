@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      class="reset-img logo"
+      class="logo"
       src="@/shared/components/Logo/logo.svg"
       loading="lazy"
       alt="Logo Kate Kulish"
@@ -16,6 +16,11 @@
 
 <style lang="scss" scoped>
 .logo {
-  width: 283px;
+  display: flex;
+  width: clamp(207px, 34vw, 283px);
+
+  @media (min-width: 1024px) {
+    flex-shrink: 0;
+  }
 }
 </style>

@@ -14,16 +14,24 @@ import BaseNavigation from './BaseNavigation.vue'
 
 <style lang="scss" scoped>
 .header {
-  display: flex;
-  padding-block: 17px 18px;
-  min-height: 80px;
   background-color: var(--color-grey-darker);
 
   &__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    gap: clamp(10px, 2vw, 50px);
+  }
+
+  @media (min-width: 1024px) {
+    padding-block: 17px 18px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-block: 10px 14px;
+  }
+
+  @media (max-width: 675px) {
+    padding-block: 4px 5px;
   }
 }
 </style>
