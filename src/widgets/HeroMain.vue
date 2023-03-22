@@ -51,7 +51,8 @@ export default {}
     left: 0;
     top: 0;
     z-index: -1;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 
   &__content {
@@ -73,7 +74,7 @@ export default {}
   }
 
   @media (min-width: 1200px) {
-    height: 1319px;
+    aspect-ratio: 16 / 11;
   }
 }
 
