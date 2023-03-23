@@ -4,6 +4,7 @@
     <HeroMain />
     <GalleryMain />
     <NewPainting />
+    <PhilosophySection />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import TheHeader from '../widgets/TheHeader.vue'
 import HeroMain from '../widgets/HeroMain.vue'
 import GalleryMain from '../widgets/GalleryMain.vue'
 import NewPainting from '../widgets/NewPainting.vue'
+import PhilosophySection from '../widgets/PhilosophySection.vue'
 
 export default {
   name: 'Main',
@@ -20,7 +22,8 @@ export default {
     TheHeader,
     HeroMain,
     GalleryMain,
-    NewPainting
+    NewPainting,
+    PhilosophySection
   }
 }
 </script>

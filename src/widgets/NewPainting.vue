@@ -1,7 +1,7 @@
 <template>
   <section class="section new-painting">
     <div class="container">
-      <h2 class="section-title new-painting__title">New painting</h2>
+      <h2 class="section-title section-title--center">New painting</h2>
       <CardPainting />
     </div>
   </section>
@@ -15,6 +15,9 @@ export default { components: { CardPainting } }
 
 <style lang="scss" scoped>
 .new-painting {
-  text-align: center;
+  .container {
+    display: grid;
+    place-items: center;
+  }
 }
 </style>

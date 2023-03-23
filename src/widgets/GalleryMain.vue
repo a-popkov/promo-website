@@ -47,8 +47,10 @@
               Name of the painting
               <time datetime="2020-03-15">(15.03.2020)</time>
             </h3>
-            <div class="price">330.00 USD</div>
-            <button class="reset-btn buy" type="button">Buy</button>
+            <div class="painting__price">
+              330.00 USD
+            </div>
+            <button class="reset-btn painting__buy" type="button">Buy</button>
           </div>
         </article>
       </swiper-slide>
@@ -65,8 +67,10 @@
               Name of the painting
               <time datetime="2020-03-15">(15.03.2020)</time>
             </h3>
-            <div class="price">330.00 USD</div>
-            <button class="reset-btn buy" type="button">Buy</button>
+            <div class="painting__price">
+              330.00 USD
+            </div>
+            <button class="reset-btn painting__buy" type="button">Buy</button>
           </div>
         </article>
       </swiper-slide>
@@ -83,8 +87,10 @@
               Name of the painting
               <time datetime="2020-03-15">(15.03.2020)</time>
             </h3>
-            <div class="price">330.00 USD</div>
-            <button class="reset-btn buy" type="button">Buy</button>
+            <div class="painting__price">
+              330.00 USD
+            </div>
+            <button class="reset-btn painting__buy" type="button">Buy</button>
           </div>
         </article>
       </swiper-slide>
@@ -101,8 +107,10 @@
               Name of the painting
               <time datetime="2020-03-15">(15.03.2020)</time>
             </h3>
-            <div class="price">330.00 USD</div>
-            <button class="reset-btn buy" type="button">Buy</button>
+            <div class="painting__price">
+              330.00 USD
+            </div>
+            <button class="reset-btn painting__buy" type="button">Buy</button>
           </div>
         </article>
       </swiper-slide>
@@ -119,8 +127,10 @@
               Name of the painting
               <time datetime="2020-03-15">(15.03.2020)</time>
             </h3>
-            <div class="price">330.00 USD</div>
-            <button class="reset-btn buy" type="button">Buy</button>
+            <div class="painting__price">
+              330.00 USD
+            </div>
+            <button class="reset-btn painting__buy" type="button">Buy</button>
           </div>
         </article>
       </swiper-slide>
@@ -137,8 +147,10 @@
               Name of the painting
               <time datetime="2020-03-15">(15.03.2020)</time>
             </h3>
-            <div class="price">330.00 USD</div>
-            <button class="reset-btn buy" type="button">Buy</button>
+            <div class="painting__price">
+              330.00 USD
+            </div>
+            <button class="reset-btn painting__buy" type="button">Buy</button>
           </div>
         </article>
       </swiper-slide>
@@ -155,8 +167,10 @@
               Name of the painting
               <time datetime="2020-03-15">(15.03.2020)</time>
             </h3>
-            <div class="price">330.00 USD</div>
-            <button class="reset-btn buy" type="button">Buy</button>
+            <div class="painting__price">
+              330.00 USD
+            </div>
+            <button class="reset-btn painting__buy" type="button">Buy</button>
           </div>
         </article>
       </swiper-slide>
@@ -192,7 +206,6 @@ export default {
 <style lang="scss" scoped>
 .gallery {
   margin-top: -190px;
-  margin-bottom: 56px;
 
   &__title {
     margin-bottom: 50px;

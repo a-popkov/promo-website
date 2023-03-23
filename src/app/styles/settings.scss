@@ -17,11 +17,11 @@
 }
 
 .page {
-  // -ms-text-size-adjust: 100%;
-  // -moz-text-size-adjust: 100%;
-  // -webkit-text-size-adjust: 100%;
-  // -webkit-font-smoothing: antialiased;
-  // text-rendering: optimizeSpeed;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
   font-family: var(--font-primary, var(--font-secondary));
   scroll-behavior: smooth;
 }
@@ -112,11 +112,19 @@
   color: var(--color-white);
 }
 
+.section {
+  margin-bottom: 56px;
+}
+
 .section-title {
   font-family: var(--font-hero);
   font-weight: var(--font-regular);
-  font-size: 200px;
+  font-size: clamp(40px, 11vw, 200px);
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--color-grey-darker);
+
+  &--center {
+    text-align: center;
+  }
 }

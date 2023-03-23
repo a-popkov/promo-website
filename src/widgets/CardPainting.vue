@@ -1,7 +1,7 @@
 <template>
   <article class="card-painting">
     <img
-      class="card-painting__img"
+      class="reset-img card-painting__img"
       loading="lazy"
       src="../widgets/assets/images/gallery/new-pain-01.jpg"
       alt=""
