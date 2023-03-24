@@ -124,6 +124,10 @@
   text-transform: uppercase;
   color: var(--color-grey-darker);
 
+  &--white {
+    color: var(--color-white);
+  }
+
   &--center {
     text-align: center;
   }

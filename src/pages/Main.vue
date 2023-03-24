@@ -5,6 +5,8 @@
     <GalleryMain />
     <NewPainting />
     <PhilosophySection />
+    <NftMarketplace />
+    <Exhibitions />
   </div>
 </template>
 
@@ -15,6 +17,8 @@ import HeroMain from '../widgets/HeroMain.vue'
 import GalleryMain from '../widgets/GalleryMain.vue'
 import NewPainting from '../widgets/NewPainting.vue'
 import PhilosophySection from '../widgets/PhilosophySection.vue'
+import NftMarketplace from '../widgets/NftMarketplace.vue'
+import Exhibitions from '../widgets/Exhibitions.vue'
 
 export default {
   name: 'Main',
@@ -23,7 +27,9 @@ export default {
     HeroMain,
     GalleryMain,
     NewPainting,
-    PhilosophySection
+    PhilosophySection,
+    NftMarketplace,
+    Exhibitions
   }
 }
 </script>
