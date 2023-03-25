@@ -7,6 +7,7 @@
     <PhilosophySection />
     <NftMarketplace />
     <Exhibitions />
+    <TheFooter />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import NewPainting from '../widgets/NewPainting.vue'
 import PhilosophySection from '../widgets/PhilosophySection.vue'
 import NftMarketplace from '../widgets/NftMarketplace.vue'
 import Exhibitions from '../widgets/Exhibitions.vue'
+import TheFooter from '../widgets/TheFooter.vue'
 
 export default {
   name: 'Main',
@@ -29,7 +31,8 @@ export default {
     NewPainting,
     PhilosophySection,
     NftMarketplace,
-    Exhibitions
+    Exhibitions,
+    TheFooter
   }
 }
 </script>

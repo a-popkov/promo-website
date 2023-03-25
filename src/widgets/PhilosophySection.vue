@@ -25,8 +25,11 @@
         <li class="grid philosophy__item">
           <div class="philosophy__image">
             <img
-              src="../widgets/assets/images/philosophy/img-01.png"
-              alt="philosophy Image 1"
+              class=""
+              loading="lazy"
+              src="../widgets/assets/images/philosophy/philosophy-img-01.jpg"
+              alt="Philosophy decoration"
+              aria-hidden="true"
             />
           </div>
           <div class="philosophy__info philosophy__info--women philosophy-info">
@@ -58,8 +61,11 @@
         <li class="grid philosophy__item philosophy__item--reverse">
           <div class="philosophy__image">
             <img
-              src="../widgets/assets/images/philosophy/img-02.png"
-              alt="philosophy Image 2"
+              class=""
+              loading="lazy"
+              src="../widgets/assets/images/philosophy/philosophy-img-02.jpg"
+              alt="Philosophy decoration"
+              aria-hidden="true"
             />
           </div>
           <div
@@ -110,6 +116,7 @@ export default {}
     right: clamp(20px, 15vw, calc((100% - 1807px) / 2));
     top: -7%;
     z-index: -1;
+    border-radius: 50%;
     width: clamp(327px, 32vw, 641px);
     height: clamp(327px, 32vw, 641px);
     background-image: url('../widgets/assets/images/philosophy/img-00.png');
@@ -149,6 +156,10 @@ export default {}
     grid-row: 2 span;
 
     img {
+      border-radius: 50%;
+      aspect-ratio: 1 / 1;
+      border: 3px solid #272727;
+      background-color: #c4c4c4;
       width: clamp(228px, 30vw, 546px);
       height: clamp(228px, 30vw, 546px);
     }
