@@ -31,8 +31,11 @@ export default {}
     border: 3px solid #393939;
     margin-bottom: 33px;
     display: block;
+    width: 100%;
+    max-height: 1338px;
     background-color: #c4c4c4;
   }
+
   &__descr {
     position: relative;
     padding-top: 50px;

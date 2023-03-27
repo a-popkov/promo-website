@@ -21,9 +21,48 @@
           the same underlying software as many cryptos.
         </p>
       </div>
-      <ul class="reset-list nft__list">
-        <li class="nft__item">
+      <Swiper
+        class="nft__slider"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+        :modules="modules"
+        :hashNavigation="{
+          watchState: true
+        }"
+        :navigation="{
+          nextEl: '.nft-next',
+          prevEl: '.nft-prev'
+        }"
+        :breakpoints="{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 19
+          },
+          567: {
+            slidesPerView: 3,
+            spaceBetween: 38
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 55
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 66
+          }
+        }"
+        :pagination="{
+          el: '.nft-pagination',
+          clickable: true
+        }"
+      >
+        <SwiperSlide>
           <a class="reset-link nft__link nft__link--blockparty" href="#">
+            <img
+              class=""
+              src="../widgets/assets/images/nft/nft-market-logo-01.png"
+              alt=""
+            />
             <span>
               <svg
                 width="12"
@@ -39,9 +78,14 @@
               </svg>
             </span>
           </a>
-        </li>
-        <li class="nft__item">
+        </SwiperSlide>
+        <SwiperSlide>
           <a class="reset-link nft__link nft__link--socialnft" href="#">
+            <img
+              class=""
+              src="../widgets/assets/images/nft/nft-market-logo-02.png"
+              alt=""
+            />
             <span>
               <svg
                 width="12"
@@ -57,9 +101,14 @@
               </svg>
             </span>
           </a>
-        </li>
-        <li class="nft__item">
+        </SwiperSlide>
+        <SwiperSlide>
           <a class="reset-link nft__link nft__link--airnfts" href="#">
+            <img
+              class=""
+              src="../widgets/assets/images/nft/nft-market-logo-03.png"
+              alt=""
+            />
             <span>
               <svg
                 width="12"
@@ -75,9 +124,14 @@
               </svg>
             </span>
           </a>
-        </li>
-        <li class="nft__item">
+        </SwiperSlide>
+        <SwiperSlide>
           <a class="reset-link nft__link nft__link--kbase" href="#">
+            <img
+              class=""
+              src="../widgets/assets/images/nft/nft-market-logo-04.png"
+              alt=""
+            />
             <span>
               <svg
                 width="12"
@@ -93,9 +147,14 @@
               </svg>
             </span>
           </a>
-        </li>
-        <li class="nft__item">
+        </SwiperSlide>
+        <SwiperSlide>
           <a class="reset-link nft__link nft__link--blockparty" href="#">
+            <img
+              class=""
+              src="../widgets/assets/images/nft/nft-market-logo-01.png"
+              alt=""
+            />
             <span>
               <svg
                 width="12"
@@ -111,9 +170,14 @@
               </svg>
             </span>
           </a>
-        </li>
-        <li class="nft__item">
+        </SwiperSlide>
+        <SwiperSlide>
           <a class="reset-link nft__link nft__link--socialnft" href="#">
+            <img
+              class=""
+              src="../widgets/assets/images/nft/nft-market-logo-02.png"
+              alt=""
+            />
             <span>
               <svg
                 width="12"
@@ -129,17 +193,63 @@
               </svg>
             </span>
           </a>
-        </li>
-      </ul>
+        </SwiperSlide>
+      </Swiper>
+      <div class="swiper-nav nft__navigation">
+        <button class="reset-btn swiper-btn swiper-btn-prev nft-prev">
+          <svg
+            width="6"
+            height="10"
+            viewBox="0 0 6 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M5 1L1 5L5 9" stroke="#4137D0" stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="swiper-pagination nft-pagination"></div>
+        <button class="reset-btn swiper-btn swiper-btn-next nft-next">
+          <svg
+            width="6"
+            height="10"
+            viewBox="0 0 6 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M1 1L5 5L1 9" stroke="#4137D0" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
 </template>
 
-<script></script>
+<script>
+import { Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+export default {
+  components: { Swiper, SwiperSlide },
+  setup () {
+    const onSwiper = swiper => {
+      console.log(swiper)
+    }
+    const onSlideChange = () => {
+      console.log('slide change')
+    }
+    return {
+      onSwiper,
+      onSlideChange,
+      modules: [Navigation, Pagination]
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .nft {
   position: relative;
+  margin-bottom: 200px;
 
   &__bg {
     position: absolute;
@@ -149,6 +259,8 @@
     margin-top: -30%;
     width: 100%;
     transform: translateX(-50%);
+    // height: 1523px;
+    aspect-ratio: 16 / 13.5;
   }
 
   &__heading {
@@ -189,50 +301,45 @@
     }
   }
 
-  &__list {
-    display: flex;
-    align-items: center;
-    column-gap: 66px;
-    padding-bottom: 225px;
+  &__slider {
+    height: 270px;
   }
+  // &__list {
+  //   display: flex;
+  //   align-items: center;
+  //   column-gap: 66px;
+  //   padding-bottom: 225px;
+  // }
 
   &__link {
+    position: relative;
     display: grid;
     place-items: center;
     border-radius: 50%;
+    padding-inline: 5px;
     border: 3px solid #232323;
-    width: 236px;
-    height: 236px;
+    width: clamp(147px, 15vw, 236px);
+    height: clamp(147px, 15vw, 236px);
     background-color: #fdfdfd;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    &--blockparty {
-      background-image: url('../widgets/assets/images/nft/nft-market-logo-01.png');
-    }
-
-    &--socialnft {
-      background-image: url('../widgets/assets/images/nft/nft-market-logo-02.svg');
-    }
-
-    &--airnfts {
-      background-image: url('../widgets/assets/images/nft/nft-market-logo-03.svg');
-    }
-
-    &--kbase {
-      background-image: url('../widgets/assets/images/nft/nft-market-logo-04.png');
+    img {
+      @media (max-width: 1400px) {
+        object-fit: contain;
+        max-inline-size: 100%;
+        height: 70px;
+        padding-inline: 10px;
+      }
     }
 
     span {
-      position: relative;
-      bottom: -114px;
-
+      bottom: clamp(-21px, 6vw, -33px);
+      position: absolute;
       display: grid;
       place-items: center;
       border-radius: 50%;
       border: 2px solid #4137d0;
-      width: 60px;
-      height: 60px;
+      width: clamp(38px, 5vw, 60px);
+      height: clamp(38px, 5vw, 60px);
       background-color: #fff;
       transition-property: background-color, box-shadow;
       transition-duration: 0.4s;
