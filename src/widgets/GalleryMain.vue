@@ -259,11 +259,11 @@ export default {
     max-width: var(--container-width);
     overflow-x: hidden;
 
-    .swiper-slide:nth-child(odd) {
-      transform: translateY(40px);
-      width: 584px;
-      height: 584px;
-    }
+    // .swiper-slide:nth-child(odd) {
+    //   transform: translateY(40px);
+    //   width: 584px;
+    //   height: 584px;
+    // }
   }
 }
 

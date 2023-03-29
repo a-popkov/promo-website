@@ -18,7 +18,7 @@
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link class="reset-link nav__link link" :to="{ name: '' }"
+        <router-link class="reset-link nav__link link" :to="{ name: 'Bio' }"
           >Bio
         </router-link>
       </li>
@@ -61,7 +61,7 @@
           </router-link>
         </li>
         <li class="nav__item">
-          <router-link class="reset-link nav__link" :to="{ name: '' }"
+          <router-link class="reset-link nav__link" :to="{ name: 'Bio' }"
             >Bio
           </router-link>
         </li>
